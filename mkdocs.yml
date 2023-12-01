@@ -1,1 +1,14 @@
 site_name: SITES Spectral Thematic Center (SSTC) - Utils
+
+theme:
+  name: 'rtd-dropdown'
+
+plugins:
+  - search
+  - mkdocstrings
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
