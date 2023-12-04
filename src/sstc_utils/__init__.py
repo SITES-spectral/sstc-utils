@@ -1,1 +1,1 @@
-import decorators
+from . import decorators
