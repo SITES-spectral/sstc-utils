@@ -9,7 +9,6 @@ def rearrange_by_spectral_band(bands:list =  ['RED', 'GRE', 'BLUE', 'NIR', 'REG'
     The function will only categorize file paths into the bands specified in the bands parameter. Any file type not listed in bands will be ignored in the output.
    
     Args:
-        func: A function that is expected to output a dictionary. This dictionary should have keys formatted as `FILENAME_BAND.TIF` and values as full file paths.
         bands (optional): A list of strings representing the spectral bands. Defaults to `['RED', 'GRE', 'BLUE', 'NIR', 'REG']`.
 
     Returns:
@@ -29,6 +28,12 @@ def rearrange_by_spectral_band(bands:list =  ['RED', 'GRE', 'BLUE', 'NIR', 'REG'
         >>>     # Function implementation that returns a dictionary of file paths    
     """
     def decorator(func):
+        """ Decorator function to `rearrange_by_spectral_band`.
+
+        Args:
+            func: A function that is expected to output a dictionary. This dictionary should have keys formatted as `FILENAME_BAND.TIF` and values as full file paths.
+        
+        """
         def wrapper(*args, **kwargs):
             # Call the original function
             original_output = func(*args, **kwargs)
