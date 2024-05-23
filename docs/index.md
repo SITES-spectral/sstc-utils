@@ -6,3 +6,4 @@
 ---
 ::: sstc_utils.utils
 ---
+"CHANGELOG.md"
