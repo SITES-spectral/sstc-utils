@@ -11,14 +11,14 @@ readme = "README.md"
 packages = [{include = "sstc_utils", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11.*"
+python = "^3.11"
 mkdocs = "*"   # "^1.5.3"
 pytest = "*"   # "^7.4.3"
 pyyaml = "*"   # "^6.0.1"
 mkdocs-rtd-dropdown = "*"    # "^1.0.2"
 mkdocstrings-python = "*"
-pyexiv2 = "*"     "^2.9.0"
-sstc_utils = "*"
+pyexiv2 = "*"    # "^2.9.0"
+
 
 [build-system]
 requires = ["poetry-core"]
